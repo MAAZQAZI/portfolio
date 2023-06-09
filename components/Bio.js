@@ -11,7 +11,7 @@ const Bio = () => {
 
     <div>
       
-       <section className="grid grid-cols-1 lg:grid-cols-[] gap-4 mb-4 font-poppins py-8">
+       <section className="grid grid-cols-1 lg:grid-cols-[] gap-4 mb-4 font-poppins py-8 bg-[url('/bbburst.svg')] bg-[length:10px_10px]	rounded">
         <div className="bg-zinc-00 h-[15rem] rounded-3xl p-10 flex flex-col gap-16">
         <ScrollAnimation>
           <h1 className="text-lg font-extrabold md:text-4xl	font-poppins text-center"
