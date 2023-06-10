@@ -32,7 +32,7 @@ const contact = () => {
        }}
           
         >
-           Want to work together?
+           Want to work together.?
         </motion.span>
           </h1>
           <p className=" font-poppins md:text-lg text-sm">
