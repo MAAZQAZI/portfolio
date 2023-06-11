@@ -103,7 +103,7 @@ export default function Home() {
        }}
           
         >
-           Hello, I&apos;m a Junior Software Engineer with A year of experience.
+           Hellu, I&apos;m a Junior Software Engineer with A year of experience.
         </motion.span>
           </h1>
           <p className="flex-1 font-poppins text-sm md:text-xl">

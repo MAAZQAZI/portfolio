@@ -3,10 +3,7 @@ import { useEffect, useState } from 'react';
 import { motion, useViewportScroll, useTransform } from 'framer-motion';
 import AnimatedList from './AnimationList';
 import ScrollAnimation from './ScrollAnimation';
-function getRandomWord() {
-    const randomIndex = Math.floor(Math.random() * words.length);
-    return words[randomIndex];
-}
+
 const Skills = () => {
 
     
@@ -14,7 +11,10 @@ const Skills = () => {
         const [currentWord, setCurrentWord] = useState('Next.js');
        
       
-        
+        function getRandomWord() {
+          const randomIndex = Math.floor(Math.random() * words.length);
+          return words[randomIndex];
+      }
       
         
       
