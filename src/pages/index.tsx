@@ -103,7 +103,7 @@ export default function Home() {
        }}
           
         >
-           Hellu, I&apos;m a Junior Software Engineer with A year of experience.
+           Hello, I&apos;m a Junior Software Engineer with A year of experience.
         </motion.span>
           </h1>
           <p className="flex-1 font-poppins text-sm md:text-xl">
@@ -154,7 +154,7 @@ export default function Home() {
       animate={controls}
       variants={animationVariants2}
     >
-        <div className="h-[30rem] rounded-3xl p-8 bg-[url('/profile.jpg')] bg-cover bg-center" />
+        <div className="h-[30rem] rounded-3xl p-8 bg-[url('/profile.jpeg')] bg-cover bg-center" />
         </motion.div>
       </section>
       
