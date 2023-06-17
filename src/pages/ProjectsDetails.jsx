@@ -16,7 +16,7 @@ const projects = () => {
             
           
           Welcome to my   <span className=" text-yellow-400">project 
-            </span> page! It's like peeking behind the <span className=" text-blue-600">curtains 
+            </span> page! It&apos;s like peeking behind the <span className=" text-blue-600">curtains 
             </span> of a magical show, except the   <span className='text-purple-600'> magician</span> is still practicing their <span className='text-pink-600'>tricks</span> 🌟.
 
           
