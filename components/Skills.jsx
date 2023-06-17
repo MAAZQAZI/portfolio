@@ -11,14 +11,15 @@ const Skills = () => {
         const [currentWord, setCurrentWord] = useState('Next.js');
        
       
-        function getRandomWord() {
-          const randomIndex = Math.floor(Math.random() * words.length);
-          return words[randomIndex];
-      }
+       
       
         
       
         useEffect(() => {
+          function getRandomWord() {
+            const randomIndex = Math.floor(Math.random() * words.length);
+            return words[randomIndex];
+        }
           const interval = setInterval(() => {
             setCurrentWord(getRandomWord());
             
