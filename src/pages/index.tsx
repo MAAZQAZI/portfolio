@@ -110,7 +110,7 @@ export default function Home() {
           From <span className="font-semibold">Pakistan 🇵🇰
 
             </span>, Loves to build things for the web. I&apos;m currently working on a few projects and looking for new opportunities.
-           <p className="	"> Final year <span className="font-semibold">CS</span> student at <span className="font-semibold">UET Lahore</span>.</p>
+           <p className="	"> Final year <span className="font-bold">CS</span> student at <span className="font-semibold">UET Lahore</span>.</p>
 
 
 
