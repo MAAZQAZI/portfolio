@@ -87,7 +87,7 @@ export default function Home() {
 
       
     
-      <section className=" dark grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-4 mb-4 font-poppins dark:text-white ">
+      <section id="home" className=" dark grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-4 mb-4 font-poppins dark:text-white ">
       <motion.div
       initial="hidden"
       animate={controls}
@@ -110,6 +110,7 @@ export default function Home() {
           From <span className="font-semibold">Pakistan 🇵🇰
 
             </span>, Loves to build things for the web. I&apos;m currently working on a few projects and looking for new opportunities.
+           <p className="	"> Final year <span className="font-semibold">CS</span> student at <span className="font-semibold">UET Lahore</span>.</p>
 
 
 

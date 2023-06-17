@@ -1,6 +1,7 @@
 import React from 'react'
 import { useEffect,useState } from 'react';
 import AnimatedList from './AnimationList';
+import Link from 'next/link';
 
 const Projects = () => {
  
@@ -31,11 +32,17 @@ const Projects = () => {
 
     useEffect(() => {
         const handleMouseMove = (event) => {
+          try { 
+
           if(isHovered){
           document.querySelector("#slidephoto").style.top = `${event.clientY}px`;
           document.querySelector("#slidephoto").style.left = `${event.clientX}px`;
           document.querySelector("#slidephoto").style.transform = `translate(${-event.clientX * 0.5}px, ${-event.clientY * 0.1}px)`;
           }
+        }catch(err){
+          console.log(err);
+
+        }
         };
     
         const handleChainnMouseMove = () => {
@@ -165,11 +172,15 @@ const Projects = () => {
            
             
         </div>
+        <Link href="/ProjectsDetails">
         <div id="showm">
-            <div id="btnsm">
+          
+            <div id="btnsm" >
                 <h1>More Work</h1>
             </div>
+         
         </div>
+        </Link>
         </AnimatedList>
     </div>
     </>

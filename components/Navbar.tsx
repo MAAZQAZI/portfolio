@@ -3,11 +3,14 @@ import React from 'react';
 import { useState } from 'react';
 import Lottie from 'react-lottie';
 import animationData from '../public/hamburger.json';
+import { Link as ScrollLink } from 'react-scroll';
 
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [animationProgress, setAnimationProgress] = useState(0);
+  
+  
 
   const [activeLink, setActiveLink] = useState('home');
 
@@ -21,44 +24,62 @@ const Navbar = () => {
 
 
   return (
-    <nav className="flex justify-between items-center py-3 px-2 font-poppins">
+    <>
+      <nav className="flex justify-between items-center py-3 px-2 font-poppins  ">
       <div className="flex items-center gap-[1ch]">
         <div className="w-5 h-5 bg-yellow-400 rounded-full" />
+        <Link href="/" className="text-2xl font-bold tracking-widest">
         <span className="text-sm font-semibold tracking-widest">MAAZ</span>
+          </Link>
       </div>
       <div className="flex gap-12 font-medium text-md text-zinc-400 space-x-1.5">
       <div className="hidden md:flex">
       {/* Regular navigation links for larger screens */}
-      <Link href="#" passHref
-        
-          className={`font-medium mr-6 ${
+     
+      <ScrollLink
+          className={`font-medium mr-6  cursor-pointer ${
             activeLink === 'home' ? 'text-black' : 'text-gray-500'
           }`}
           onClick={() => handleClick('home')}
+          to="home"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={900}
         >
           Home
       
-      </Link>
-      <Link href="#" passHref
-       
-          className={`space-x-1.5 mr-6 ${
-            activeLink === 'projects' ? 'text-black' : 'text-gray-500'
-          }`}
-          onClick={() => handleClick('projects')}
-        >
-          Projects
+      </ScrollLink>
+      
+           <ScrollLink
+            className={`space-x-1.5 mr-6 cursor-pointer  ${
+              activeLink === 'projects' ? 'text-black' : 'text-gray-500'
+            }`}
+            onClick={() => handleClick('projects')}
+            to="project"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={900}
+          >Projects</ScrollLink>
+          
         
-      </Link>
-      <Link href="#" passHref
+     
+          <ScrollLink
         
-          className={`${
+          className={` cursor-pointer ${
             activeLink === 'contact' ? 'text-black' : 'text-gray-500'
           }`}
           onClick={() => handleClick('contact')}
+          to="contact"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={900}
         >
           Contact
         
-      </Link>
+        </ScrollLink>
     </div>
 
         <div className="md:hidden" onClick={toggleMenu} >
@@ -107,15 +128,29 @@ const Navbar = () => {
           <div className="flex flex-col items-left p-10 h-screen">
             <ul className="flex flex-col gap-6 text-2xl font-bold">
               <li>
-                <Link href="#" className="text-black ">
+                <Link href="/" className="text-black ">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="#">Projects</Link>
+                <Link href="/ProjectsDetails">Projects</Link>
               </li>
               <li>
-                <Link href="#">Contact</Link>
+                <ScrollLink
+
+                  className={` cursor-pointer ${
+                    activeLink === 'contact' ? 'text-black' : 'text-gray-500'
+                  }`}
+                  onClick={() => handleClick('contact')}
+                  onClickCapture={toggleMenu}
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={900}
+                >
+                Contact
+                </ScrollLink>
               </li>
             </ul>
             <button
@@ -141,6 +176,8 @@ const Navbar = () => {
         </div>
       )}
     </nav>
+    </>
+  
   );
 };
 

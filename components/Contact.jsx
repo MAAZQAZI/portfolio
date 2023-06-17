@@ -21,7 +21,7 @@ const contact = () => {
 
     <div  >
         <ScrollAnimation >
-       <section className=" grid grid-cols-1 lg:grid-cols-[] gap-4 mb-4 mt-11 font-poppins dark:text-white">
+       <section id='contact' className=" grid grid-cols-1 lg:grid-cols-[] gap-4 mb-4 mt-11 font-poppins dark:text-white">
         <div className=" h-[18rem] rounded-3xl p-10 flex flex-col gap-3 bg-[url('/gradient-bg.jpg')] bg-cover md:gap-6">
           <h1 className="md:text-4xl text-3xl font-semibold font-poppins ">
            
