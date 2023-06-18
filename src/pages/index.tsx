@@ -80,7 +80,8 @@ export default function Home() {
       <Head>
         <title>MAAZ</title>
         <meta name="description" content="Personal Portfolio ❤" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:image:width" content="300"/>
+<meta property="og:image:height" content="300"/>
         <meta property="og:title" content="Maaz Sajjad" />
        
         <meta property="og:image" content="/meta1.png" />
@@ -115,8 +116,8 @@ export default function Home() {
           <p className="flex-1 font-poppins text-sm md:text-xl">
           From <span className="font-semibold">Pakistan 🇵🇰
 
-            </span>, Loves to build thingss for the web. I&apos;m currently working on a few projects and looking for new opportunities.
-           Final year <span className="font-bold">CS</span> student at <span className="font-semibold">UET Lahoree</span>.
+            </span>, Loves to build things for the web. I&apos;m currently working on a few projects and looking for new opportunities.
+           Final year <span className="font-bold">CS</span> student at <span className="font-semibold">UET Lahore</span>.
 
 
 
