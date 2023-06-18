@@ -115,7 +115,7 @@ export default function Home() {
           <p className="flex-1 font-poppins text-sm md:text-xl">
           From <span className="font-semibold">Pakistan 🇵🇰
 
-            </span>, Loves to build things for the web. I&apos;m currently working on a few projects and looking for new opportunities.
+            </span>, Loves to build thingss for the web. I&apos;m currently working on a few projects and looking for new opportunities.
            Final year <span className="font-bold">CS</span> student at <span className="font-semibold">UET Lahore</span>.
 
 
