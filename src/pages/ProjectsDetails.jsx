@@ -22,12 +22,7 @@ const projects = () => {
           
           </h1>
           </ScrollAnimation>
-          <p className="flex-1 font-poppins ">
           
-
-
-
-          </p>
          
         </div>
       
