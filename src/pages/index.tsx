@@ -80,8 +80,8 @@ export default function Home() {
       <Head>
         <title>MAAZ</title>
         <meta name="description" content="Personal Portfolio ❤" />
-        <meta property="og:image:width" content="300"/>
-<meta property="og:image:height" content="300"/>
+        <meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="800"/>
         <meta property="og:title" content="Maaz Sajjad" />
        
         <meta property="og:image" content="/meta1.png" />
