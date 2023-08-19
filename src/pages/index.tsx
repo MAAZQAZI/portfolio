@@ -137,7 +137,7 @@ export default function Home() {
               </SocialButton>
               <SocialButton bgColor="instagram" >
 
-                <Instagram className="w-5 h-5" onClick={() => openInNewTab('https://www.instagram.com/maaz_zsz/')}  />
+                <Instagram className="w-5 h-5" onClick={() => openInNewTab('https://www.instagram.com/maaz_qzi/')}  />
                
               </SocialButton>
 
